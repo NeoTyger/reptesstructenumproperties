@@ -6,16 +6,20 @@ public class Repte1 : MonoBehaviour
 {
 
     public Item itemC;
+    public ItemS itemS;
     
     // Start is called before the first frame update
     void Start()
     {
         itemC = new Item("Uno", 1, "Joc de cartes");
-        ItemS.itemName = "Monopoly";
-        ItemS.itemId = 2;
+        itemS.itemName = "Monopoly";
+        itemS.itemId = 2;
         
         ChangeNameItem(itemC, "Virus");
-        ChangeNameItem(iS:Item, "Virus" );
+        ChangeNameItem(itemS, "Virus");
+        
+        Debug.Log(itemC.itemName);
+        Debug.Log(itemS.itemName);
     }
 
     public struct ItemS
